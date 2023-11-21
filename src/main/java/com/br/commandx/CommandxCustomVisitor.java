@@ -1,7 +1,7 @@
 
 package com.br.commandx;
 
-public class CommandxCustomVisitor extends SimpleBaseVisitor<Object> {
+public class CommandxCustomVisitor extends CommandxBaseVisitor<Object> {
 
 
 

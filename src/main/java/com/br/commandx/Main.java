@@ -15,11 +15,11 @@ public class Main {
 
 		System.out.println("Interpreting file " + program);
 
-		SimpleLexer lexer = new SimpleLexer(new ANTLRFileStream(program));
+		CommandxLexer lexer = new CommandxLexer(new ANTLRFileStream(program));
 		CommonTokenStream tokens = new CommonTokenStream(lexer);
-		SimpleParser parser = new SimpleParser(tokens);
+		CommandxParser parser = new CommandxParser(tokens);
 
-		SimpleParser.StartContext tree = parser.start();
+		CommandxParser.StartContext tree = parser.start();
 
 		CommandxCustomVisitor visitor = new CommandxCustomVisitor();
 		visitor.visit(tree);
