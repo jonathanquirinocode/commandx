@@ -1,11 +1,11 @@
-grammar Simple;
+grammar CommandX;
 
 @parser::header{ 
 	import java.util.Map;
 	import java.util.HashMap;
 	import java.util.List;
 	import java.util.ArrayList;
-	import com.mylanguage.simple.ast.*;
+	import com.br.commandx.ast.*;
 }
 
 @parser::members {
